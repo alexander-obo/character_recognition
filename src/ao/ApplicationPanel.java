@@ -61,7 +61,7 @@ public class ApplicationPanel extends JPanel {
                     }
                 }
             }
-            binarizedData = ZongSyn.skeletonizaciya(matrix, binarizedData);
+            binarizedData = ZongSyn.skeletonizaciya2(matrix, binarizedData);
             filteredImage.setIcon(new ImageIcon(binarizedImage));
             updateUI();
         }
