@@ -73,6 +73,11 @@ public class ZongSyn {
         return binarizedData;
     }
 
+    /*
+     p8	p1 p2
+     p7	p  p3
+     p6	p5 p4
+     */
     private static boolean isPointBelongsToContour(int matrix[][], int x, int y) {
         int p2 = matrix[y - 1][x];
         int p3 = matrix[y - 1][x + 1];
@@ -93,11 +98,6 @@ public class ZongSyn {
         return result;
     }
 
-    /*
-     p8	p1 p2
-     p7	p  p3
-     p6	p5 p4
-     */
     // number of nonzero 8-neighbors
     private static int B(int matrix[][], int x, int y) {
         int p1 = matrix[y - 1][x];
@@ -112,7 +112,7 @@ public class ZongSyn {
         return result;
     }
 
-    // number of zeto-to-one transitions in the order sequence p1p2...p8p1
+    // number of zero-to-one transitions in the order sequence p1p2...p8p1
     private static int A(int matrix[][], int x, int y) {
         int p1 = matrix[y - 1][x];
         int p2 = matrix[y - 1][x + 1];
