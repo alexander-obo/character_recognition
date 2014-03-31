@@ -1,4 +1,4 @@
-package ao;
+package ao.ui;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

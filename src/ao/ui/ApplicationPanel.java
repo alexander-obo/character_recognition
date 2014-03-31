@@ -1,7 +1,7 @@
-package ao;
+package ao.ui;
 
-import ao.listener.FilterListener;
-import ao.listener.OpenFileListener;
+import ao.ui.listener.FilterListener;
+import ao.ui.listener.OpenFileListener;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.image.BufferedImage;
@@ -10,8 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import util.OtsuBinarize;
-import util.ZongSyn;
+import ao.util.OtsuBinarize;
+import ao.util.ZongSyn;
 
 public class ApplicationPanel extends JPanel {
 
