@@ -13,68 +13,35 @@ public class ClonalgAlgorithm {
     private Mutation mutation;
     private Boolean random;
     private Antigen randomAntigen;
-    private Random randomGenerator = new Random();
+    private final Random randomGenerator = new Random();
     private int affinityCoefficient = 100;
 
     public ClonalgAlgorithm() {
         currAgId = -1;
-        cells = null;
         firstSelectionNumber = clonSelectionNumber = terminationCriteria = 0;
         random = true;
         cloning = Cloning.proportionalCloning;
         mutation = Mutation.proportionalMutation;
     }
 
-    public int getCurrAgId() {
-        return currAgId;
-    }
-
-    public void setCurrAgId(int currAgId) {
-        this.currAgId = currAgId;
-    }
-
-    public Data getCells() {
-        return cells;
-    }
-
     public void setCells(Data cells) {
         this.cells = cells;
-    }
-
-    public int getFirstSelectionNumber() {
-        return firstSelectionNumber;
     }
 
     public void setFirstSelectionNumber(int firstSelectionNumber) {
         this.firstSelectionNumber = firstSelectionNumber;
     }
 
-    public int getClonSelectionNumber() {
-        return clonSelectionNumber;
-    }
-
     public void setClonSelectionNumber(int clonSelectionNumber) {
         this.clonSelectionNumber = clonSelectionNumber;
-    }
-
-    public int getTerminationCriteria() {
-        return terminationCriteria;
     }
 
     public void setTerminationCriteria(int terminationCriteria) {
         this.terminationCriteria = terminationCriteria;
     }
 
-    public Cloning getCloning() {
-        return cloning;
-    }
-
     public void setCloning(Cloning cloning) {
         this.cloning = cloning;
-    }
-
-    public Mutation getMutation() {
-        return mutation;
     }
 
     public void setMutation(Mutation mutation) {
@@ -87,26 +54,6 @@ public class ClonalgAlgorithm {
 
     public void setRandom(Boolean random) {
         this.random = random;
-    }
-
-    public Antigen getRandomAntigen() {
-        return randomAntigen;
-    }
-
-    public void setRandomAntigen(Antigen randomAntigen) {
-        this.randomAntigen = randomAntigen;
-    }
-
-    public Random getRandomGenerator() {
-        return randomGenerator;
-    }
-
-    public void setRandomGenerator(Random randomGenerator) {
-        this.randomGenerator = randomGenerator;
-    }
-
-    public int getAffinityCoefficient() {
-        return affinityCoefficient;
     }
 
     public void setAffinityCoefficient(int affinityCoefficient) {
