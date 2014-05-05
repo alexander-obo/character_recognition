@@ -13,7 +13,7 @@ public class ApplicationFrame extends JFrame {
     }
 
     private void init() {
-        setTitle("Character Recognition");
+        setTitle("Алгоритм Зонга-Суня vs гибридный алгоритм");
         setBounds(SCREEN_SIZE.width / 4, SCREEN_SIZE.height / 4, SCREEN_SIZE.width / 2, SCREEN_SIZE.height / 2);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         add(new ApplicationPanel());

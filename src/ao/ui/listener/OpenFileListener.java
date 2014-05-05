@@ -29,7 +29,7 @@ public class OpenFileListener implements ActionListener {
                 BufferedImage image = ImageIO.read(fileChooser.getSelectedFile());
                 if (image != null) {
                     applicationPanel.setImage(image);
-                    applicationPanel.updateDisplayedImage();
+                    applicationPanel.updateDisplayedSourceImage();
                 } else {
                     JOptionPane.showMessageDialog(null, "File cannot be read as an image.", "Error", JOptionPane.ERROR_MESSAGE);
                 }
